@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>コンテキスト面接とは｜CaseMatch — LLM時代のAI面接プラットフォーム</title>
+<meta name="description" content="コンテキスト面接とは、組織と候補者のコンテキストを起点にした新しいAI面接。組織×職務×候補者の三層コンテキストをLLMに参照させ、毎回スクラッチで設計した質問と評価基準で、本質的な採用判断を可能にします。中途専門職に特化したハイクラス採用の新標準。">
+<meta property="og:title" content="コンテキスト面接とは｜CaseMatch">
+<meta property="og:description" content="LLM時代のコンテキスト面接プラットフォーム。組織×職務×候補者の三層コンテキストで、毎回スクラッチで設計する本質採用。">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root { --navy: #1B3A6B; --blue: #1565C0; --green: #1B5E20; --teal: #00796B; --orange: #EF6C00; --red: #C62828; --sub: #C9D8EF; --lgray: #F5F5F5; --gray: #6B7280; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; color: #1A1A2E; }
+.bg-navy { background-color: var(--navy); }
+.bg-blue { background-color: var(--blue); }
+.bg-green { background-color: var(--green); }
+.bg-teal { background-color: var(--teal); }
+.bg-orange { background-color: var(--orange); }
+.bg-red { background-color: var(--red); }
+.bg-sub { background-color: var(--sub); }
+.bg-lgray { background-color: var(--lgray); }
+.text-navy { color: var(--navy); }
+.text-blue { color: var(--blue); }
+.text-green { color: var(--green); }
+.text-orange { color: var(--orange); }
+.border-navy { border-color: var(--navy); }
+.hero-pattern { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); }
+.section-divider { border-top: 4px solid var(--blue); width: 60px; }
+</style>
+</head>
+<body class="bg-white">
+
+<!-- ヘッダー / パンくず -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-navy">CaseMatch</div>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#what" class="hover:text-blue">コンテキスト面接とは</a>
+      <a href="#why" class="hover:text-blue">なぜ必要か</a>
+      <a href="#diff" class="hover:text-blue">従来との違い</a>
+      <a href="#faq" class="hover:text-blue">FAQ</a>
+      <a href="#cta" class="bg-navy text-white px-4 py-2 rounded">無料デモ申込</a>
+    </nav>
+  </div>
+  <div class="max-w-6xl mx-auto px-6 py-2 text-xs text-gray-500">
+    ホーム / <span class="text-navy font-bold">コンテキスト面接</span>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-pattern text-white py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="inline-block bg-white/10 backdrop-blur px-4 py-1 rounded-full text-sm mb-6">CaseMatch — LLM時代のAI面接プラットフォーム</div>
+    <h1 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">コンテキスト面接<br>とは？</h1>
+    <p class="text-xl md:text-2xl text-sub mb-6 leading-relaxed">
+      組織と候補者のコンテキストを起点にした、<br>新しい AI 面接のかたち
+    </p>
+    <p class="text-base md:text-lg text-white/80 max-w-3xl leading-relaxed">
+      組織の進化と候補者の思考・キャリアを「コンテキスト」として積み重ね、毎回スクラッチで設計した質問と評価基準で、組織の進化にマッチした高精度の採用を実現します。
+    </p>
+    <div class="mt-10 flex gap-4">
+      <a href="#cta" class="bg-white text-navy px-6 py-3 rounded font-bold hover:bg-sub">無料デモを申し込む</a>
+      <a href="#what" class="bg-white/10 text-white px-6 py-3 rounded font-bold hover:bg-white/20 border border-white/30">詳しく見る ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section: What -->
+<section id="what" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="section-divider mb-6"></div>
+    <h2 class="text-4xl font-bold text-navy mb-8">コンテキスト面接<br class="md:hidden">とは</h2>
+    <div class="bg-navy text-white p-10 rounded-xl mb-12">
+      <p class="text-xl leading-relaxed">
+        <strong>組織・職務・候補者の三層コンテキストを LLM に参照させ、毎回スクラッチで設計した質問と評価基準で本質的な採用判断を行う AI 面接</strong>です。
+      </p>
+    </div>
+
+    <h3 class="text-2xl font-bold text-navy mb-6">三層コンテキスト</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border border-gray-200 rounded-xl p-6 hover:border-blue transition">
+        <div class="bg-blue text-white inline-block px-3 py-1 rounded text-xs font-bold mb-4">01 ORGANIZATION</div>
+        <h4 class="text-xl font-bold mb-3">組織コンテキスト</h4>
+        <p class="text-gray-700 mb-3">評価基準・組織図・ハウスガイド・カルチャー・過去活躍人材</p>
+        <p class="text-sm text-blue font-bold">→ 「御社で活躍する人」の輪郭</p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6 hover:border-teal transition">
+        <div class="bg-teal text-white inline-block px-3 py-1 rounded text-xs font-bold mb-4">02 ROLE</div>
+        <h4 class="text-xl font-bold mb-3">職務コンテキスト</h4>
+        <p class="text-gray-700 mb-3">求める能力・成果定義・KPI・入社後の役割</p>
+        <p class="text-sm text-blue font-bold">→ 「この職種で必要な能力」の解像度</p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6 hover:border-green transition">
+        <div class="bg-green text-white inline-block px-3 py-1 rounded text-xs font-bold mb-4">03 CANDIDATE</div>
+        <h4 class="text-xl font-bold mb-3">候補者コンテキスト</h4>
+        <p class="text-gray-700 mb-3">前職・キャリア・志向・面接時発話・行動</p>
+        <p class="text-sm text-blue font-bold">→ 「目の前の人」の立体的な理解</p>
+      </div>
+    </div>
+    <p class="text-center text-lg mt-8 text-navy font-bold">3 つを統合して LLM に渡すから、固定項目では見えない本質が浮かび上がる</p>
+  </div>
+</section>
+
+<!-- Section: Why Now -->
+<section id="why" class="py-20 bg-lgray">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="section-divider mb-6"></div>
+    <h2 class="text-4xl font-bold text-navy mb-4">コンテキスト面接が、これからの採用に欠かせないワケ</h2>
+    <p class="text-gray-600 mb-12">3 つの構造的な変化が、新しい評価アーキテクチャを必要としている</p>
+
+    <div class="space-y-6">
+      <div class="bg-white p-8 rounded-xl flex gap-6">
+        <div class="bg-blue text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">01</div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy mb-3">「正解」がない時代。職種ごとに評価軸が変わる</h3>
+          <p class="text-gray-700 leading-relaxed">
+            ジョブ型移行が進み、従来の「総合職一括採用」から「専門職別採用」の時代へ。同じ会社でも、コンサル職・PMO 職・マーケ職・営業職で求める能力は根本的に異なります。固定された 10 項目の評価では、職種ごとの違いを見抜くことはできません。
+          </p>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-xl flex gap-6">
+        <div class="bg-teal text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">02</div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy mb-3">候補者理解のカギは、組織との"フィット"の深さにある</h3>
+          <p class="text-gray-700 leading-relaxed">
+            「採用ミスマッチ」の本質は、候補者個人の能力ではなく、<strong>組織のコンテキストとのフィット</strong>です。御社のミッション、カルチャー、過去に活躍した人材の特徴 ―― これらを面接の評価軸に組み込まなければ、本当に活躍する人を見極めることはできません。
+          </p>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-xl flex gap-6">
+        <div class="bg-green text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">03</div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy mb-3">カスタムプロパティの設定だけでは、本質を見抜けない</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            多くの AI 面接ツールは「評価指標のカスタマイズ」を謳いますが、その実態は<strong>標準モデルに評価項目を追加・重み付け変更するだけ</strong>。組織と候補者を結ぶコンテキストの厚みは、カスタムプロパティの設定では再現できません。
+          </p>
+          <div class="bg-lgray p-4 rounded text-sm text-navy">
+            <strong>従来 = Configuration（構成作業）</strong>：「何を測るか」を選び設定する立場<br>
+            <strong>コンテキスト面接 = Cultivation（コンテキスト育成）</strong>：「組織が何を必要としているか」を理解する
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: 従来との違い 比較表 -->
+<section id="diff" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="section-divider mb-6"></div>
+    <h2 class="text-4xl font-bold text-navy mb-4">従来の AI 面接との違い</h2>
+    <p class="text-gray-600 mb-8">「カスタマイズ」と「コンテキスト」は、設計思想が根本的に違います</p>
+
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse text-sm">
+        <thead>
+          <tr>
+            <th class="bg-navy text-white p-4 text-left">観点</th>
+            <th class="bg-orange text-white p-4 text-left">🔵 従来の AI 面接<br><span class="text-xs font-normal">（カスタムプロパティ型）</span></th>
+            <th class="bg-green text-white p-4 text-left">🟢 コンテキスト面接<br><span class="text-xs font-normal">（CaseMatch）</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="p-4 font-bold bg-lgray">設計思想</td>
+            <td class="p-4">標準モデルに評価指標を追加・微修正</td>
+            <td class="p-4 font-bold text-green">三層コンテキストを LLM に参照させてゼロから設計</td>
+          </tr>
+          <tr class="border-b bg-lgray/30">
+            <td class="p-4 font-bold bg-lgray">評価軸の出発点</td>
+            <td class="p-4">提供側が用意した固定 or 選択式の指標（5-10項目）</td>
+            <td class="p-4 font-bold text-green">御社の組織進化に合わせて毎回スクラッチで設計</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-4 font-bold bg-lgray">候補者理解の深さ</td>
+            <td class="p-4">発話内容・行動データのみ</td>
+            <td class="p-4 font-bold text-green">候補者の思考・志向・キャリアを含む立体的理解</td>
+          </tr>
+          <tr class="border-b bg-lgray/30">
+            <td class="p-4 font-bold bg-lgray">組織との接続</td>
+            <td class="p-4">浅い／表面的</td>
+            <td class="p-4 font-bold text-green">組織のミッション・カルチャー・過去活躍人材まで参照</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-4 font-bold bg-lgray">質問設計の根拠</td>
+            <td class="p-4">標準テンプレート + 重み付け</td>
+            <td class="p-4 font-bold text-green">評価基準から逆算した質問設計</td>
+          </tr>
+          <tr class="border-b bg-lgray/30">
+            <td class="p-4 font-bold bg-lgray">入社後活躍まで見るか</td>
+            <td class="p-4">短期の選考効率重視</td>
+            <td class="p-4 font-bold text-green">長期 TCO（早期離職コスト）まで射程</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-4 font-bold bg-lgray">顧客側の関わり</td>
+            <td class="p-4">ツールを<strong>設定する</strong>ユーザー</td>
+            <td class="p-4 font-bold text-green">コンテキストを<strong>育てる</strong>パートナー</td>
+          </tr>
+          <tr class="border-b bg-lgray/30">
+            <td class="p-4 font-bold bg-lgray">時間とともに</td>
+            <td class="p-4">老朽化（標準モデルの陳腐化）</td>
+            <td class="p-4 font-bold text-green">進化（コンテキストの蓄積で精度向上）</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-bold bg-lgray">本質的なアプローチ</td>
+            <td class="p-4">構成作業（Configuration）</td>
+            <td class="p-4 font-bold text-green">コンテキスト育成（Context Cultivation）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-2 gap-6">
+      <div class="bg-orange/10 border-l-4 border-orange p-6 rounded">
+        <h4 class="font-bold text-orange mb-2">🔵 Configuration の限界</h4>
+        <p class="text-gray-700">設定可能な項目の枠内でしかチューニングできず、標準モデルの精度に依存。時間とともに陳腐化する。</p>
+      </div>
+      <div class="bg-green/10 border-l-4 border-green p-6 rounded">
+        <h4 class="font-bold text-green mb-2">🟢 Cultivation の力</h4>
+        <p class="text-gray-700">コンテキストは時間とともに厚みを増し、評価精度は蓄積とともに向上する。組織の評価ノウハウが資産化される。</p>
+      </div>
+    </div>
+
+    <div class="mt-10 bg-navy text-white p-8 rounded-xl text-center">
+      <p class="text-2xl font-bold mb-2">他社は「設定する」、CaseMatch は「育てる」</p>
+      <p class="text-sub">測りたいものを選ぶのではなく、組織の必要を理解する</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section: 4つのポイント -->
+<section class="py-20 bg-lgray">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="section-divider mb-6"></div>
+    <h2 class="text-4xl font-bold text-navy mb-12">コンテキスト面接の4つのポイント</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-8 rounded-xl">
+        <div class="text-blue font-bold text-sm mb-2">POINT 1</div>
+        <h3 class="text-xl font-bold mb-3">組織コンテキスト</h3>
+        <p class="text-gray-700">組織のミッション、ビジョン、カルチャー、過去に活躍した人材の特徴を、評価の起点にします。</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl">
+        <div class="text-teal font-bold text-sm mb-2">POINT 2</div>
+        <h3 class="text-xl font-bold mb-3">職務コンテキスト</h3>
+        <p class="text-gray-700">職種ごとに求める能力・成果定義・KPI を明確にし、職務に必要な能力を逆算した質問設計を行います。</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl">
+        <div class="text-green font-bold text-sm mb-2">POINT 3</div>
+        <h3 class="text-xl font-bold mb-3">候補者コンテキスト</h3>
+        <p class="text-gray-700">候補者の前職・キャリア・志向・面接時の発話・行動を統合的に理解し、組織との"フィット"を立体的に評価します。</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl">
+        <div class="text-orange font-bold text-sm mb-2">POINT 4</div>
+        <h3 class="text-xl font-bold mb-3">面接コンテキスト</h3>
+        <p class="text-gray-700">評価基準から逆算した質問設計、複数評価指標の重み付け、矛盾検出のチェック機構までを一貫して設計します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: 事例 -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="section-divider mb-6"></div>
+    <h2 class="text-4xl font-bold text-navy mb-12">事例：コンテキスト面接の違いがわかる実践例</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition">
+        <div class="bg-blue text-white p-6">
+          <div class="text-sm mb-2">CASE 01</div>
+          <h3 class="text-2xl font-bold">中途専門職採用の通過期待値が3倍に向上</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-700 mb-4">
+            大手 IT コンサル企業では、PMO・IT 専門職の中途採用において、従来の標準 AI 面接では「会社カルチャーとの相性」を測れず、入社後の早期離職が課題でした。
+          </p>
+          <p class="text-gray-700">
+            CaseMatch のコンテキスト面接導入後、組織の評価基準を全面参照することで一次面接通過率が大幅に改善。<strong class="text-blue">通過期待値が 3 倍</strong>に向上しました。
+          </p>
+        </div>
+      </div>
+      <div class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition">
+        <div class="bg-green text-white p-6">
+          <div class="text-sm mb-2">CASE 02</div>
+          <h3 class="text-2xl font-bold">入社後活躍率が改善し、長期 TCO を大幅削減</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-700 mb-4">
+            大手戦略コンサル系企業では、新卒 420 名の採用で「同業界の経験はないがポテンシャルのある求職者」の見極めが課題でした。
+          </p>
+          <p class="text-gray-700">
+            CaseMatch のコンテキスト面接で組織コンテキストを統合した結果、入社後の早期離職率が改善し、長期 TCO で<strong class="text-green"> 1名あたり¥1,200 万のミスマッチコストが半減</strong>。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: CaseMatch 特徴 -->
+<section class="py-20 bg-navy text-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="border-t-4 border-blue w-16 mb-6"></div>
+    <h2 class="text-4xl font-bold mb-4">CaseMatch とは</h2>
+    <p class="text-sub mb-12 max-w-3xl text-lg leading-relaxed">
+      コンテキスト面接プラットフォーム。2024 年 3 月リリース、累計受験者数 10 万人を突破。組織×職務×候補者の三層コンテキストを LLM に参照させ、毎回スクラッチで設計した質問と評価基準で、中途専門職の本質的な採用判断を可能にします。
+    </p>
+
+    <h3 class="text-2xl font-bold mb-8">CaseMatch の3つの差別化</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+        <div class="text-4xl font-bold text-blue mb-3">01</div>
+        <h4 class="text-xl font-bold mb-3">三層コンテキスト × スクラッチ</h4>
+        <p class="text-sub text-sm">「カスタマイズ」と「スクラッチ」は別物。御社の組織コンテキストから評価基準そのものを毎回ゼロから組み立てます。</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+        <div class="text-4xl font-bold text-teal mb-3">02</div>
+        <h4 class="text-xl font-bold mb-3">ナレッジグラフUIで育てる</h4>
+        <p class="text-sub text-sm">蓄積したコンテキストはナレッジグラフ UI で構造化され、面接ごとに精度が向上。御社の評価ノウハウを資産化します。</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+        <div class="text-4xl font-bold text-green mb-3">03</div>
+        <h4 class="text-xl font-bold mb-3">中途専門職特化</h4>
+        <p class="text-sub text-sm">「万能な AI 面接」ではなく「中途専門職に深く効く AI 面接」。ハイクラス採用の現場で結果を出すために設計されています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: FAQ -->
+<section id="faq" class="py-20 bg-lgray">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="section-divider mb-6"></div>
+    <h2 class="text-4xl font-bold text-navy mb-12">よくある質問</h2>
+
+    <div class="space-y-4">
+      <details class="bg-white p-6 rounded-xl group">
+        <summary class="font-bold text-lg cursor-pointer text-navy group-open:text-blue">「カスタマイズ」と「コンテキスト」の違いは？</summary>
+        <p class="mt-4 text-gray-700">カスタマイズは標準モデルに評価指標を追加・微修正すること。コンテキストは、組織×職務×候補者の三層を LLM に参照させて評価そのものを毎回ゼロから組み立てることです。設計思想が根本的に違います。</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl group">
+        <summary class="font-bold text-lg cursor-pointer text-navy group-open:text-blue">すでに AI 面接を導入しています。コンテキスト面接に乗り換えるメリットは？</summary>
+        <p class="mt-4 text-gray-700">中途専門職の採用、特にジョブ型移行を進める企業では、固定指標型の AI 面接では限界があります。新卒で他社 AI 面接を使っていても、中途は別物として併用することが最適解です。</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl group">
+        <summary class="font-bold text-lg cursor-pointer text-navy group-open:text-blue">中小企業でも使えますか？</summary>
+        <p class="mt-4 text-gray-700">コンテキスト面接は、特に<strong>従業員 2,000 名以上のジョブ型移行層</strong>に効果を発揮します。中小企業向けにはより軽量プランも用意しています。</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl group">
+        <summary class="font-bold text-lg cursor-pointer text-navy group-open:text-blue">SPI などの適性検査と何が違いますか？</summary>
+        <p class="mt-4 text-gray-700">SPI は候補者個人の素質を測る標準テスト。CaseMatch のコンテキスト面接は「<strong>御社の組織で活躍する候補者</strong>」を見極めるツールです。多くの企業で SPI 予算を CaseMatch に振り替える形で導入されています。</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl group">
+        <summary class="font-bold text-lg cursor-pointer text-navy group-open:text-blue">採用 ROI はどのくらいですか？</summary>
+        <p class="mt-4 text-gray-700">基準ケース（中途 50 名/年・大手 2,000-5,000 名）で、短期削減 ¥290-390 万/年 + 長期 TCO 削減 ¥3,000 万/年。詳細は資料をダウンロードしてください。</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl group">
+        <summary class="font-bold text-lg cursor-pointer text-navy group-open:text-blue">トライアルはありますか？</summary>
+        <p class="mt-4 text-gray-700">30 分の個別デモで、御社の評価基準と組織コンテキストを実際に投入して体験いただけます。標準モデルでの体験ではなく、御社固有のコンテキストでの体験です。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="py-20 hero-pattern text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">御社のコンテキストで<br>30分体験しませんか</h2>
+    <p class="text-xl text-sub mb-10">他社のトライアルは標準モデル体験。<br>CaseMatch は御社固有のコンテキストで体験できます。</p>
+    <div class="grid md:grid-cols-3 gap-4 mb-10 text-left">
+      <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+        <div class="text-blue font-bold mb-2">STEP 1</div>
+        <h4 class="font-bold mb-2">30分の個別デモ</h4>
+        <p class="text-sub text-sm">御社の評価基準・組織コンテキストを投入して体験</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+        <div class="text-teal font-bold mb-2">STEP 2</div>
+        <h4 class="font-bold mb-2">パイロット契約</h4>
+        <p class="text-sub text-sm">3 ヶ月・月 ¥200K〜の小規模試験運用</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+        <div class="text-green font-bold mb-2">STEP 3</div>
+        <h4 class="font-bold mb-2">本契約</h4>
+        <p class="text-sub text-sm">エンタープライズプラン + カスタム評価モデル</p>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="https://biz.casematch.jp/contact" class="bg-white text-navy px-8 py-4 rounded font-bold hover:bg-sub">無料デモを申し込む →</a>
+      <a href="https://biz.casematch.jp/document" class="bg-white/10 text-white px-8 py-4 rounded font-bold hover:bg-white/20 border border-white/30">サービス紹介資料 DL</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy text-white py-10 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-6 text-sm">
+    <div class="flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <div class="text-2xl font-bold mb-2">CaseMatch</div>
+        <p class="text-sub">LLM 時代のコンテキスト面接プラットフォーム</p>
+      </div>
+      <div class="flex gap-8">
+        <div>
+          <div class="font-bold mb-2">サービス</div>
+          <ul class="text-sub space-y-1">
+            <li><a href="https://biz.casematch.jp">CaseMatch</a></li>
+            <li><a href="#">コンテキスト面接</a></li>
+            <li><a href="#">AI 面接</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold mb-2">情報</div>
+          <ul class="text-sub space-y-1">
+            <li><a href="#">コラム</a></li>
+            <li><a href="#">資料 DL</a></li>
+            <li><a href="#">事例</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 border-t border-white/10 text-sub text-xs">
+      © 2026 CaseMatch. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
