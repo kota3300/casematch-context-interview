@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>コンテキスト面接 — CaseMatch 価値定義</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --navy: #1B3A6B;
+    --dark: #1A1A2E;
+    --gold: #F9A825;
+    --blue: #1565C0;
+    --teal: #00796B;
+    --green: #1B5E20;
+    --orange: #EF6C00;
+    --purple: #6A1B9A;
+    --lgray: #F5F5F5;
+    --gray: #666;
+  }
+  body { font-family: 'Calibri', 'Helvetica Neue', sans-serif; color: var(--dark); background: white; }
+  h1, h2, h3 { font-family: 'Calibri Light', 'Helvetica Neue', sans-serif; font-weight: 700; }
+  .navy-bg { background: var(--navy); color: white; }
+  .gold-text { color: var(--gold); }
+  .gold-bg { background: var(--gold); color: white; }
+  .arrow-down::after { content: '↓'; color: var(--gold); font-size: 1.5rem; font-weight: bold; display: block; text-align: center; margin: 0.5rem 0; }
+  .arrow-right::after { content: '→'; color: var(--gold); font-size: 1.5rem; font-weight: bold; }
+  .section-anchor { scroll-margin-top: 80px; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Sticky Nav -->
+<nav class="navy-bg sticky top-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+    <div class="text-xl font-bold">CaseMatch</div>
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="#section1" class="hover:text-yellow-300 transition">コンテキスト面接とは</a>
+      <a href="#section2" class="hover:text-yellow-300 transition">候補者マッチング</a>
+      <a href="#section3" class="hover:text-yellow-300 transition">DB資産化</a>
+      <a href="#section4" class="hover:text-yellow-300 transition">ハイクラス採用</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="navy-bg py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="text-yellow-300 text-sm tracking-widest mb-4">CONTEXT INTERVIEW</p>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">採用要件は、点ではなく動的に。</h1>
+    <p class="text-xl text-blue-100 mt-6">組織・部署・人材の3階層を動的に解釈し、活躍人材から逆算する採用要件定義</p>
+    <p class="text-sm text-blue-200 mt-8 italic">= 単なる工数削減のAI面接ではない。自社のコンテキストを資産化する仕組み。</p>
+  </div>
+</header>
+
+<!-- Section 1: コンテキスト面接とは -->
+<section id="section1" class="section-anchor py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-sm tracking-widest text-blue-700 mb-2">SECTION 1</p>
+    <h2 class="text-3xl md:text-4xl mb-12" style="color: var(--navy);">コンテキスト面接とは</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- 3階層 -->
+      <div class="bg-gray-50 rounded-lg p-6 border">
+        <h3 class="text-lg mb-4" style="color: var(--navy);">① 3階層のコンテキスト</h3>
+        <div class="space-y-3">
+          <div class="rounded-lg p-4 text-white" style="background: var(--purple);">
+            <div class="font-bold">組織コンテキスト</div>
+            <div class="text-sm opacity-90 mt-1">時系列で変化する組織の成長フェーズ</div>
+          </div>
+          <div class="arrow-down"></div>
+          <div class="rounded-lg p-4 text-white" style="background: var(--blue);">
+            <div class="font-bold">部署コンテキスト</div>
+            <div class="text-sm opacity-90 mt-1">部署単位で異なる活躍人材定義</div>
+          </div>
+          <div class="arrow-down"></div>
+          <div class="rounded-lg p-4 text-white" style="background: var(--teal);">
+            <div class="font-bold">人コンテキスト</div>
+            <div class="text-sm opacity-90 mt-1">既存の活躍人材から評価軸を逆算</div>
+          </div>
+          <div class="arrow-down"></div>
+          <div class="rounded-lg p-4 text-center font-bold text-white" style="background: var(--gold);">
+            ★ 動的に統合された採用要件
+          </div>
+        </div>
+      </div>
+
+      <!-- 一言定義 + 動的サイクル -->
+      <div class="space-y-6">
+        <div class="navy-bg rounded-lg p-6">
+          <p class="text-yellow-300 text-xs mb-3 tracking-widest">② 一言で言うと</p>
+          <p class="text-2xl font-bold leading-tight mb-3">「採用要件は、点ではなく動的に。」</p>
+          <p class="text-sm text-blue-100">組織・部署・人材の3階層を動的に解釈し、活躍人材から逆算する採用要件定義。</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6 border">
+          <h3 class="text-sm mb-4" style="color: var(--navy);">③ 動的サイクル — 面談すればするほど、自社のコンテキストが育つ</h3>
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <span class="rounded px-3 py-2 text-white font-bold" style="background: var(--blue);">面談</span>
+            <span class="gold-text font-bold">→</span>
+            <span class="rounded px-3 py-2 text-white font-bold" style="background: var(--teal);">評価</span>
+            <span class="gold-text font-bold">→</span>
+            <span class="rounded px-3 py-2 text-white font-bold" style="background: var(--green);">蓄積</span>
+            <span class="gold-text font-bold">→</span>
+            <span class="rounded px-3 py-2 text-white font-bold" style="background: var(--orange);">要件更新</span>
+            <span class="gold-text font-bold">→</span>
+            <span class="rounded px-3 py-2 text-white font-bold" style="background: var(--purple);">次の面談</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4類型マップ -->
+    <div class="mt-12">
+      <h3 class="text-lg mb-4" style="color: var(--navy);">④ AI面接 4類型マップ — 唯一無二のコンテキスト型</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="rounded-lg p-4 text-white text-center" style="background: var(--gray);">
+          <div class="font-bold">固定項目型</div>
+          <div class="text-xs mt-1 opacity-90">PFN / PeopleX<br>マイナビMQ</div>
+        </div>
+        <div class="rounded-lg p-4 text-white text-center" style="background: var(--gray);">
+          <div class="font-bold">対話特化型</div>
+          <div class="text-xs mt-1 opacity-90">雑な対話のみ</div>
+        </div>
+        <div class="rounded-lg p-4 text-white text-center" style="background: var(--gray);">
+          <div class="font-bold">カスタマイズ型</div>
+          <div class="text-xs mt-1 opacity-90">VARIETAS</div>
+        </div>
+        <div class="rounded-lg p-4 text-center" style="background: var(--gold); color: white; border: 2px solid var(--navy);">
+          <div class="font-bold">★ コンテキスト型</div>
+          <div class="text-xs mt-1">CaseMatch<br>（唯一無二）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: 3階層 × 候補者 マッチング図解（NEW） -->
+<section id="section2" class="section-anchor py-16 px-6" style="background: var(--lgray);">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-sm tracking-widest text-blue-700 mb-2">SECTION 2 — NEW</p>
+    <h2 class="text-3xl md:text-4xl mb-4" style="color: var(--navy);">3階層 × 候補者 マッチング図</h2>
+    <p class="text-gray-600 mb-12">採用要件（3階層）と候補者コンテキスト（個人）が、面接の中で動的にマッチングされる</p>
+
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <div class="grid md:grid-cols-3 gap-6 items-center">
+
+        <!-- 左: 採用要件3階層 -->
+        <div class="space-y-3">
+          <p class="text-center text-sm font-bold" style="color: var(--navy);">企業側：採用要件 3階層</p>
+          <div class="rounded-lg p-3 text-white text-center" style="background: var(--purple);">
+            <div class="text-xs opacity-80">組織</div>
+            <div class="font-bold text-sm">成長フェーズ</div>
+          </div>
+          <div class="rounded-lg p-3 text-white text-center" style="background: var(--blue);">
+            <div class="text-xs opacity-80">部署</div>
+            <div class="font-bold text-sm">活躍人材定義</div>
+          </div>
+          <div class="rounded-lg p-3 text-white text-center" style="background: var(--teal);">
+            <div class="text-xs opacity-80">人材</div>
+            <div class="font-bold text-sm">評価軸（逆算）</div>
+          </div>
+        </div>
+
+        <!-- 中央: マッチングエンジン -->
+        <div class="text-center">
+          <div class="navy-bg rounded-full w-40 h-40 mx-auto flex flex-col items-center justify-center p-6">
+            <div class="text-yellow-300 text-xs mb-1 tracking-widest">CaseMatch AI</div>
+            <div class="font-bold text-lg leading-tight">動的<br>マッチング</div>
+            <div class="text-xs text-blue-100 mt-1">面接で逐次解釈</div>
+          </div>
+          <p class="text-sm text-gray-600 mt-4">↑ 双方向で照合 ↓</p>
+        </div>
+
+        <!-- 右: 候補者コンテキスト -->
+        <div class="space-y-3">
+          <p class="text-center text-sm font-bold" style="color: var(--navy);">候補者側：個人コンテキスト</p>
+          <div class="rounded-lg p-3 text-white text-center" style="background: var(--orange);">
+            <div class="text-xs opacity-80">経歴・実績</div>
+            <div class="font-bold text-sm">過去の経験</div>
+          </div>
+          <div class="rounded-lg p-3 text-white text-center" style="background: var(--orange);">
+            <div class="text-xs opacity-80">適性・志向</div>
+            <div class="font-bold text-sm">価値観・モチベ</div>
+          </div>
+          <div class="rounded-lg p-3 text-white text-center" style="background: var(--orange);">
+            <div class="text-xs opacity-80">面接での回答</div>
+            <div class="font-bold text-sm">思考プロセス</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 下段: マッチング後の出力 -->
+      <div class="mt-8 pt-8 border-t-2 border-dashed" style="border-color: var(--gold);">
+        <p class="text-center text-sm font-bold mb-4" style="color: var(--navy);">↓ マッチング結果 ↓</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="rounded-lg p-4 text-center" style="background: var(--gold); color: white;">
+            <div class="text-xs opacity-80">入社時の配置</div>
+            <div class="font-bold">最適部署提案</div>
+          </div>
+          <div class="rounded-lg p-4 text-center" style="background: var(--gold); color: white;">
+            <div class="text-xs opacity-80">活躍見込み</div>
+            <div class="font-bold">スコア + 根拠</div>
+          </div>
+          <div class="rounded-lg p-4 text-center" style="background: var(--gold); color: white;">
+            <div class="text-xs opacity-80">入社後支援</div>
+            <div class="font-bold">育成プラン示唆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-sm text-gray-600 mt-6 italic">
+      従来：採用要件は「点」で固定 → 面接で「合否」判定<br>
+      CaseMatch：採用要件が「動的」 × 候補者コンテキストを多次元解釈 = 配置・育成まで見据えた採用判断
+    </p>
+  </div>
+</section>
+
+<!-- Section 3: DB資産化 -->
+<section id="section3" class="section-anchor py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-sm tracking-widest text-blue-700 mb-2">SECTION 3</p>
+    <h2 class="text-3xl md:text-4xl mb-4" style="color: var(--navy);">コンテキストDB資産化</h2>
+    <p class="text-gray-600 mb-8">面接は「採用するか否か」のスポット判断ではなく、組織のデータ資産を育てる継続活動</p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- 蓄積4データ -->
+      <div class="bg-gray-50 rounded-lg p-6 border">
+        <h3 class="text-lg mb-4" style="color: var(--navy);">蓄積される 4データ</h3>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--blue);">①</div>
+            <div><div class="font-bold">履歴書</div><div class="text-xs text-gray-600">経歴・スキル・実績の構造化データ</div></div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--teal);">②</div>
+            <div><div class="font-bold">面談内容</div><div class="text-xs text-gray-600">会話のテキスト全文 + 文脈タグ</div></div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--purple);">③</div>
+            <div><div class="font-bold">面談動画</div><div class="text-xs text-gray-600">表情・トーン・間も含めた一次データ</div></div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--orange);">④</div>
+            <div><div class="font-bold">QA試行性</div><div class="text-xs text-gray-600">質問×回答×評価のセット（再現性検証可能）</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 入社後の活用 -->
+      <div class="navy-bg rounded-lg p-6">
+        <h3 class="text-lg mb-4 text-yellow-300">入社後の活用シーン</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="border-l-4 border-yellow-400 pl-3"><span class="font-bold text-yellow-300">▶ 採用検証:</span><br>採用判断 vs 入社後活躍 の追跡で評価モデル精緻化</li>
+          <li class="border-l-4 border-yellow-400 pl-3"><span class="font-bold text-yellow-300">▶ 1on1・評価面談:</span><br>面接時のコンテキストを上長が参照、個別最適化</li>
+          <li class="border-l-4 border-yellow-400 pl-3"><span class="font-bold text-yellow-300">▶ 360評価:</span><br>採用時の自己分析と他者評価の比較で成長支援</li>
+          <li class="border-l-4 border-yellow-400 pl-3"><span class="font-bold text-yellow-300">▶ 異動・配置決定:</span><br>コンテキストデータで適性を再評価、社内マッチング</li>
+          <li class="border-l-4 border-yellow-400 pl-3"><span class="font-bold text-yellow-300">▶ 退職時引継ぎ:</span><br>後任採用要件への活躍データ反映、再現性UP</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-center mt-8 text-sm font-bold" style="color: var(--navy);">
+      ★ 面談すればするほど自社のコンテキストが育ち、採用 → 配置 → 育成 → 引継ぎ まで一気通貫の組織OSへ
+    </p>
+  </div>
+</section>
+
+<!-- Section 4: ハイクラス採用 -->
+<section id="section4" class="section-anchor py-16 px-6" style="background: var(--lgray);">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-sm tracking-widest text-blue-700 mb-2">SECTION 4</p>
+    <h2 class="text-3xl md:text-4xl mb-4" style="color: var(--navy);">ハイクラス採用の実現</h2>
+    <p class="text-gray-600 mb-2">3階層×DB資産が、即戦力採用を可能にする</p>
+
+    <div class="rounded-lg gold-bg p-4 text-center mb-8 mt-4">
+      <p class="text-xl font-bold">ハイクラス人材を、ハイクラスのまま見極めて採用する</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- 採用シーン -->
+      <div class="bg-white rounded-lg p-6 border-t-4" style="border-color: var(--blue);">
+        <h3 class="text-base mb-4" style="color: var(--blue);">① 採用シーン（活用事例）</h3>
+        <ul class="space-y-3 text-sm">
+          <li><span class="font-bold" style="color: var(--blue);">▸ VARIETAS塗替</span><br><span class="text-xs text-gray-600">新卒V→中途CMで併用</span></li>
+          <li><span class="font-bold" style="color: var(--blue);">▸ SPI置換</span><br><span class="text-xs text-gray-600">適性検査の高度化版として</span></li>
+          <li><span class="font-bold" style="color: var(--blue);">▸ コンサル即戦力</span><br><span class="text-xs text-gray-600">PMO・ITコンサルの実務適性評価</span></li>
+          <li><span class="font-bold" style="color: var(--blue);">▸ 商社マネジメント層</span><br><span class="text-xs text-gray-600">5,000名超企業の管理職採用</span></li>
+          <li><span class="font-bold" style="color: var(--blue);">▸ 金融エキスパート</span><br><span class="text-xs text-gray-600">専門職の構造化評価</span></li>
+        </ul>
+      </div>
+
+      <!-- 人材アトラクション -->
+      <div class="bg-white rounded-lg p-6 border-t-4" style="border-color: var(--teal);">
+        <h3 class="text-base mb-4" style="color: var(--teal);">② 人材アトラクション</h3>
+        <ul class="space-y-3 text-sm">
+          <li><span class="font-bold" style="color: var(--teal);">▸ 24時間どこでも</span><br><span class="text-xs text-gray-600">候補者の都合に合わせた面接</span></li>
+          <li><span class="font-bold" style="color: var(--teal);">▸ カスタマイズ質問</span><br><span class="text-xs text-gray-600">自社コンテキストに沿った質問</span></li>
+          <li><span class="font-bold" style="color: var(--teal);">▸ 納得感の高い面接</span><br><span class="text-xs text-gray-600">「ちゃんと見てくれてる」体験</span></li>
+          <li><span class="font-bold" style="color: var(--teal);">▸ 過去候補者から加策</span><br><span class="text-xs text-gray-600">活躍見込みパターンマッチング</span></li>
+          <li><span class="font-bold" style="color: var(--teal);">▸ フィードバック共有</span><br><span class="text-xs text-gray-600">面接後の評価レポート提示</span></li>
+        </ul>
+      </div>
+
+      <!-- 採用→活躍 -->
+      <div class="bg-white rounded-lg p-6 border-t-4" style="border-color: var(--purple);">
+        <h3 class="text-base mb-4" style="color: var(--purple);">③ 採用→活躍の連続性</h3>
+        <ul class="space-y-3 text-sm">
+          <li><span class="font-bold" style="color: var(--purple);">▸ 活躍人材データ蓄積</span><br><span class="text-xs text-gray-600">採用後の評価データを取得</span></li>
+          <li><span class="font-bold" style="color: var(--purple);">▸ 評価モデル精緻化</span><br><span class="text-xs text-gray-600">活躍した人のパターン抽出</span></li>
+          <li><span class="font-bold" style="color: var(--purple);">▸ 採用要件 動的更新</span><br><span class="text-xs text-gray-600">次の採用に活躍データ反映</span></li>
+          <li><span class="font-bold" style="color: var(--purple);">▸ 組織×時系列で進化</span><br><span class="text-xs text-gray-600">成長フェーズに合わせ最適化</span></li>
+          <li class="text-gray-400 italic"><span class="font-bold">▸ （将来の活用可能性）</span><br><span class="text-xs">現時点は採用入口に集中</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 実績 -->
+    <div class="navy-bg rounded-lg p-6 mt-8">
+      <p class="text-yellow-300 text-sm font-bold mb-4">ハイクラス採用実績</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white rounded p-3 text-center font-bold" style="color: var(--navy);">シグマクシス</div>
+        <div class="bg-white rounded p-3 text-center font-bold" style="color: var(--navy);">INTLOOP</div>
+        <div class="bg-white rounded p-3 text-center font-bold" style="color: var(--navy);">マーサー</div>
+        <div class="bg-white rounded p-3 text-center text-gray-400">（順次拡大）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="navy-bg py-8 px-6 text-center text-sm">
+  <p class="text-blue-100">CaseMatch | コンテキスト面接 価値定義 v2 | 2026-05-14</p>
+  <p class="text-blue-300 text-xs mt-2">Confidential — 共有・編集は宮本までご確認ください</p>
+</footer>
+
+</body>
+</html>
