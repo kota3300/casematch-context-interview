@@ -90,7 +90,7 @@
 
         <!-- 右: 候補者側 -->
         <div class="space-y-3">
-          <p class="text-center text-sm font-bold" style="color: var(--navy);">候補者側：個人コンテキスト</p>
+          <p class="text-center text-sm font-bold" style="color: var(--navy);">候補者側：候補者コンテキスト</p>
           <div class="rounded-lg p-3 text-white text-center" style="background: var(--orange);">
             <div class="text-xs opacity-80">経歴・実績</div>
             <div class="font-bold text-sm">過去の経験</div>
@@ -162,25 +162,62 @@
       </div>
     </div>
 
-    <!-- ② コンテキスト面接で蓄積される 4データ -->
+    <!-- ② 候補者コンテキスト — コンテキスト面接で取得する -->
     <div class="bg-white rounded-lg p-6 mb-6 border">
-      <h3 class="text-lg mb-4" style="color: var(--navy);">② コンテキスト面接で蓄積される 4データ</h3>
-      <div class="grid md:grid-cols-4 gap-3">
-        <div class="border rounded-lg p-4 flex items-start gap-3">
-          <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--blue);">①</div>
-          <div><div class="font-bold">履歴書</div><div class="text-xs text-gray-600 mt-1">経歴・スキル・実績の構造化データ</div></div>
+      <h3 class="text-lg mb-4" style="color: var(--navy);">② 候補者コンテキスト — コンテキスト面接で取得する 3要素</h3>
+      <p class="text-xs text-gray-500 mb-4">右側オレンジの候補者側コンテキストを、AI面接の中で構造化して取得</p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="rounded-lg overflow-hidden border" style="border-color: var(--orange);">
+          <div class="p-3 text-white" style="background: var(--orange);">
+            <div class="text-xs opacity-80">経歴・実績</div>
+            <div class="font-bold">過去の経験</div>
+          </div>
+          <div class="p-4 bg-white">
+            <div class="text-xs font-bold mb-2" style="color: var(--navy);">取得方法</div>
+            <div class="text-xs text-gray-700">履歴書 + 面接冒頭の経験深掘りで構造化</div>
+          </div>
         </div>
-        <div class="border rounded-lg p-4 flex items-start gap-3">
-          <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--teal);">②</div>
-          <div><div class="font-bold">面談内容</div><div class="text-xs text-gray-600 mt-1">会話のテキスト全文 + 文脈タグ</div></div>
+        <div class="rounded-lg overflow-hidden border" style="border-color: var(--orange);">
+          <div class="p-3 text-white" style="background: var(--orange);">
+            <div class="text-xs opacity-80">適性・志向</div>
+            <div class="font-bold">価値観・モチベ</div>
+          </div>
+          <div class="p-4 bg-white">
+            <div class="text-xs font-bold mb-2" style="color: var(--navy);">取得方法</div>
+            <div class="text-xs text-gray-700">面談内容（テキスト）＋ 動画（表情・トーン）で深掘り</div>
+          </div>
         </div>
-        <div class="border rounded-lg p-4 flex items-start gap-3">
-          <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--purple);">③</div>
-          <div><div class="font-bold">面談動画</div><div class="text-xs text-gray-600 mt-1">表情・トーン・間も含めた一次データ</div></div>
+        <div class="rounded-lg overflow-hidden border" style="border-color: var(--orange);">
+          <div class="p-3 text-white" style="background: var(--orange);">
+            <div class="text-xs opacity-80">面接での回答</div>
+            <div class="font-bold">思考プロセス</div>
+          </div>
+          <div class="p-4 bg-white">
+            <div class="text-xs font-bold mb-2" style="color: var(--navy);">取得方法</div>
+            <div class="text-xs text-gray-700">QA試行性（質問×回答×評価セット）で再現性検証</div>
+          </div>
         </div>
-        <div class="border rounded-lg p-4 flex items-start gap-3">
-          <div class="rounded-full w-10 h-10 flex items-center justify-center font-bold text-white flex-shrink-0" style="background: var(--orange);">④</div>
-          <div><div class="font-bold">QA試行性</div><div class="text-xs text-gray-600 mt-1">質問×回答×評価のセット（再現性検証可能）</div></div>
+      </div>
+      <!-- 蓄積4データ補足 -->
+      <div class="mt-5 pt-5 border-t">
+        <p class="text-xs font-bold mb-3" style="color: var(--navy);">↓ これら3要素を、コンテキスト面接で 4データ として蓄積</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+          <div class="flex items-center gap-2 bg-gray-50 rounded px-3 py-2">
+            <span class="rounded-full w-6 h-6 flex items-center justify-center text-white font-bold text-xs" style="background: var(--blue);">①</span>
+            <span class="font-bold">履歴書</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-50 rounded px-3 py-2">
+            <span class="rounded-full w-6 h-6 flex items-center justify-center text-white font-bold text-xs" style="background: var(--teal);">②</span>
+            <span class="font-bold">面談内容</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-50 rounded px-3 py-2">
+            <span class="rounded-full w-6 h-6 flex items-center justify-center text-white font-bold text-xs" style="background: var(--purple);">③</span>
+            <span class="font-bold">面談動画</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-50 rounded px-3 py-2">
+            <span class="rounded-full w-6 h-6 flex items-center justify-center text-white font-bold text-xs" style="background: var(--orange);">④</span>
+            <span class="font-bold">QA試行性</span>
+          </div>
         </div>
       </div>
     </div>
